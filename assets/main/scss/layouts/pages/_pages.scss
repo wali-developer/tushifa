@@ -178,3 +178,25 @@ Authentification
     }
   }
 }
+
+.exportBtn {
+  width: 150px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  span {
+    font-size: 17px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+  }
+}
