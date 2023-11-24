@@ -4,9 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Tabib Apps web | Admin Dashboard Template" />
     <title>Tushifa</title>
-    <!-- Favicon icon -->
+    <!-- Favicon icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
@@ -18,17 +17,27 @@
 
   <body>
     <div id="main-wrapper" class="show">
+      <!-- start logo components -->
+      <div class="nav-header">
+        <div class="brand-logo">
+          <a href="index.html"
+            ><img class="brand-title" src="assets/images/logo-tagline.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <!-- End logo components -->
+
       <!-- start section sidebar -->
       <aside class="left-panel nicescroll-box">
         <nav class="navigation">
           <ul class="list-unstyled main-menu">
-            <li class="has-submenu active">
+            <li class="has-submenu">
               <a href="index.html">
                 <i class="fas fa-th-large"></i>
                 <span class="nav-label">Dashboard</span>
               </a>
             </li>
-            <li class="has-submenu">
+            <li class="has-submenu active">
               <a href="javascript:void()" class="has-arrow mm-collapsed">
                 <i class="fas fa-users"></i>
                 <span class="nav-label">Pharmacies</span>
@@ -60,6 +69,15 @@
                 <li><a href="prescription-request.html">Prescription requests</a></li>
               </ul>
             </li>
+            <!-- <li class="has-submenu">
+              <a href="javascript:void()" class="has-arrow mm-collapsed">
+                <i class="fas fa-cog"></i>
+                <span class="nav-label">Settings</span>
+              </a>
+              <ul class="list-unstyled mm-collapse">
+                <li><a href="doctor-settings.html">Settings</a></li>
+              </ul>
+            </li> -->
             <li class="has-submenu">
               <a href="settings.html">
                 <i class="fas fa-th-large"></i>
@@ -78,16 +96,6 @@
         </div>
       </aside>
       <!-- End section sidebar -->
-
-      <!-- start logo components -->
-      <div class="nav-header">
-        <div class="brand-logo">
-          <a href="index.html"
-            ><img class="brand-title" src="assets/images/logo-tagline.png" alt=""
-          /></a>
-        </div>
-      </div>
-      <!-- End logo components -->
 
       <!-- start section header -->
       <div class="header">
@@ -255,85 +263,41 @@
       <!-- start section content -->
       <div class="content-body">
         <div class="warper container-fluid">
-          <div class="row page-titles mx-0">
-            <div class="col-lg-12 p-md-0">
-              <h4 class="text-primary">Good morning <span class="names">Roberts</span></h4>
-            </div>
-          </div>
-          <div class="new-patients main_container">
-            <div class="row">
-              <div class="col-sm-6 col-xl-3 col-lg-6">
-                <div class="widget card card-primary bg-card1">
-                  <div class="card-body">
-                    <div class="media text-center">
-                      <span>
-                        <i class="fas fa-calendar-check fa-2x"></i>
-                      </span>
-                      <div class="media-body">
-                        <span class="text-white">Earnings</span>
-                        <h3 class="mb-0 text-white">7699</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-xl-3 col-lg-6">
-                <div class="widget card card-danger bg-card2">
-                  <div class="card-body">
-                    <div class="media text-center">
-                      <span>
-                        <i class="fas fa-user-nurse fa-2x"></i>
-                      </span>
-                      <div class="media-body">
-                        <span class="text-white">Patients</span>
-                        <h3 class="mb-0 text-white">400</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-xl-3 col-lg-6">
-                <div class="widget card card-primary bg-card3">
-                  <div class="card-body">
-                    <div class="media text-center">
-                      <span>
-                        <i class="fas fa-user-plus fa-2x"></i>
-                      </span>
-                      <div class="media-body">
-                        <span class="text-white">Appointments</span>
-                        <h3 class="mb-0 text-white">1360</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-xl-3 col-lg-6">
-                <div class="widget card card-primary bg-card4">
-                  <div class="card-body">
-                    <div class="media text-center">
-                      <span>
-                        <i class="fas fa-database fa-2x"></i>
-                      </span>
-                      <div class="media-body">
-                        <span class="text-white">Total Revenue</span>
-                        <h3 class="mb-0 text-white">$6500</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- New Patient table -->
           <div class="all-patients main_container">
+            <div class="row page-titles mx-0">
+              <div class="col-sm-6 p-md-0">
+                <div class="welcome-text">
+                  <h4 class="text-primary">All Pharmacy</h4>
+                </div>
+              </div>
+              <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active">
+                    <a href="/new-patient.html">All Pharmacy</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
             <div class="row">
               <div class="col-lg-12">
                 <div class="card">
                   <div class="card-header fix-card">
                     <div class="row">
-                      <div class="col-8">
-                        <h4 class="card-title">New Patients</h4>
+                      <div class="col-8 d-flex gap-2 align-items-center">
+                        <!-- <div class="exportBtn">
+                          <span class="fas fa-cloud-upload-alt"></span>
+                          <p>Import list</p>
+                        </div> -->
+                        <div class="exportBtn">
+                          <span class="fas fa-cloud-download-alt"></span>
+                          <p>Export list</p>
+                        </div>
+                      </div>
+                      <div class="col-4 float-end">
+                        <a href="/new-patient.html" class="btn btn-primary float-end"
+                          >New Pharmacy</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -343,18 +307,10 @@
                         <thead>
                           <tr>
                             <th></th>
-                            <th>Patient Name</th>
-                            <th>Age</th>
+                            <th>Pharmacy Name</th>
                             <th>Email</th>
                             <th>Mobile No.</th>
-                            <th>Birthday</th>
-                            <th>Gender</th>
-                            <th>Sex</th>
-                            <th>Blood Group</th>
-                            <th>Patient Weight</th>
-                            <th>Patient Height</th>
                             <th>Address</th>
-                            <th>Patient History</th>
                             <th>Action</th>
                           </tr>
                         </thead>
@@ -369,17 +325,11 @@
                               />
                             </td>
                             <td>Airi</td>
-                            <td>20</td>
+                            <td>test@gmail.com</td>
                             <td>test@gmail.com</td>
                             <td>658543469</td>
                             <td>2011/04/25</td>
-                            <td>Married</td>
-                            <td>Male</td>
-                            <td>A +</td>
-                            <td>61</td>
-                            <td>41</td>
-                            <td>lorem ipsum kwjhdkj jkdhjkfds</td>
-                            <td>lorem ipsum kwjhdkj jkdhjkfds</td>
+                            <td>Peshawar, Pakistan</td>
                             <td>
                               <a class="mr-4 vue">
                                 <span class="fa fa-eye tbl-eye" aria-hidden="true"></span>
@@ -401,18 +351,10 @@
                                 alt=""
                               />
                             </td>
-                            <td>Angelica</td>
-                            <td>33</td>
+                            <td>Airi</td>
                             <td>test@gmail.com</td>
                             <td>658543469</td>
-                            <td>2011/04/25</td>
-                            <td>Married</td>
-                            <td>Male</td>
-                            <td>A +</td>
-                            <td>61</td>
-                            <td>41</td>
-                            <td>lorem ipsum kwjhdkj jkdhjkfds</td>
-                            <td>lorem ipsum kwjhdkj jkdhjkfds</td>
+                            <td>Peshawar, pakistan</td>
                             <td>
                               <a class="mr-4 vue">
                                 <span class="fa fa-eye tbl-eye" aria-hidden="true"></span>
@@ -434,18 +376,10 @@
                                 alt=""
                               />
                             </td>
-                            <td>Ashton</td>
-                            <td>44</td>
+                            <td>Airi</td>
                             <td>test@gmail.com</td>
                             <td>658543469</td>
-                            <td>2011/04/25</td>
-                            <td>Married</td>
-                            <td>Male</td>
-                            <td>A +</td>
-                            <td>61</td>
-                            <td>41</td>
-                            <td>lorem ipsum kwjhdkj jkdhjkfds</td>
-                            <td>lorem ipsum kwjhdkj jkdhjkfds</td>
+                            <td>Peshawar, pakistan</td>
                             <td>
                               <a class="mr-4 vue">
                                 <span class="fa fa-eye tbl-eye" aria-hidden="true"></span>
@@ -467,18 +401,10 @@
                                 alt=""
                               />
                             </td>
-                            <td>Bradley</td>
-                            <td>55</td>
+                            <td>Airi</td>
                             <td>test@gmail.com</td>
                             <td>658543469</td>
-                            <td>2011/04/25</td>
-                            <td>Married</td>
-                            <td>Male</td>
-                            <td>A +</td>
-                            <td>61</td>
-                            <td>41</td>
-                            <td>lorem ipsum kwjhdkj jkdhjkfds</td>
-                            <td>lorem ipsum kwjhdkj jkdhjkfds</td>
+                            <td>Peshawar, pakistan</td>
                             <td>
                               <a class="mr-4 vue">
                                 <span class="fa fa-eye tbl-eye" aria-hidden="true"></span>
@@ -500,51 +426,10 @@
                                 alt=""
                               />
                             </td>
-                            <td>Brenden</td>
-                            <td>43</td>
+                            <td>Airi</td>
                             <td>test@gmail.com</td>
                             <td>658543469</td>
-                            <td>2011/04/25</td>
-                            <td>Married</td>
-                            <td>Male</td>
-                            <td>A +</td>
-                            <td>61</td>
-                            <td>41</td>
-                            <td>lorem ipsum kwjhdkj jkdhjkfds</td>
-                            <td>lorem ipsum kwjhdkj jkdhjkfds</td>
-                            <td>
-                              <a class="mr-4 vue">
-                                <span class="fa fa-eye tbl-eye" aria-hidden="true"></span>
-                              </a>
-                              <a data-bs-toggle="modal" data-bs-target="#modal-edit" class="mr-4">
-                                <span class="fas fa-pencil-alt tbl-edit"></span>
-                              </a>
-                              <a class="mr-4 delet">
-                                <span class="fas fa-trash-alt tbl-delet"></span>
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img
-                                class="rounded-circle"
-                                width="35"
-                                src="https://via.placeholder.com/35/f8f8f8/2b2b2b"
-                                alt=""
-                              />
-                            </td>
-                            <td>Brielle</td>
-                            <td>25</td>
-                            <td>test@gmail.com</td>
-                            <td>658543469</td>
-                            <td>2011/04/25</td>
-                            <td>Married</td>
-                            <td>Male</td>
-                            <td>A +</td>
-                            <td>61</td>
-                            <td>41</td>
-                            <td>lorem ipsum kwjhdkj jkdhjkfds</td>
-                            <td>lorem ipsum kwjhdkj jkdhjkfds</td>
+                            <td>Peshawar, pakistan</td>
                             <td>
                               <a class="mr-4 vue">
                                 <span class="fa fa-eye tbl-eye" aria-hidden="true"></span>
@@ -612,22 +497,143 @@
       <!-- End section footer -->
     </div>
 
+    <!-- Show data patient -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <!-- <div > -->
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel">
+              <img
+                class="rounded-circle"
+                width="35"
+                src="https://via.placeholder.com/150/f8f8f8/2b2b2b"
+                alt=""
+              />
+              Tiger Nixon
+            </h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="insertHere"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Show data patient -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-edit"
+      tabindex="-1"
+      aria-labelledby="modal-title-edit-row"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title-edit-row">Angelica Ramos</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="basic-form">
+                  <form>
+                    <div class="row">
+                      <div class="col-xl-4">
+                        <div class="form-group row widget-3">
+                          <div class="col-lg-12">
+                            <div class="form-input">
+                              <label class="labeltest" for="file-ip-1">
+                                <span> Drop image here or click to upload. </span>
+                              </label>
+                              <input
+                                type="file"
+                                id="file-ip-1"
+                                accept="image/*"
+                                onchange="showPreview(event);"
+                              />
+                              <div class="preview">
+                                <img id="file-ip-1-preview" src="#" alt="img" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4">
+                        <div class="form-group row">
+                          <div class="col-lg-12">
+                            <input type="text" class="form-control" placeholder="Pharmacy Name" />
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-lg-12">
+                            <input type="text" class="form-control" placeholder="Contact No." />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4">
+                        <div class="form-group row">
+                          <div class="col-lg-12">
+                            <input type="email" class="form-control" placeholder="Email" />
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-lg-12">
+                            <input type="text" class="form-control" placeholder="Address" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Modal -->
+
     <!-- JQuery v3.5.1 -->
     <script src="assets/plugins/jquery/jquery.min.js"></script>
+
     <!-- popper js -->
     <script src="assets/plugins/popper/popper.min.js"></script>
+
     <!-- Bootstrap -->
-    <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
     <!-- Moment -->
     <script src="assets/plugins/moment/moment.min.js"></script>
+
     <!-- Date Range Picker -->
     <script src="assets/plugins/daterangepicker/daterangepicker.min.js"></script>
+
     <!-- Datatable -->
     <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="assets/js/init-tdatatable.js"></script>
-    <!-- Chart js -->
-    <script src="assets/plugins/chart/chart/Chart.min.js"></script>
-    <script src="assets/js/charts-custom.js"></script>
+
     <!-- Main Custom JQuery -->
     <script src="assets/js/toggleFullScreen.js"></script>
     <script src="assets/js/main.js"></script>
