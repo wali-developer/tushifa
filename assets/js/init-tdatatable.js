@@ -50,29 +50,29 @@ $("#example2 tbody").on("click", ".vue", function () {
   var data = ex2.row($(this).parents("tr")).data();
   $(".insertHere").html(
     // Adding and structuring the full data
-    '<table class="table table-striped table-responsive-sm modalShowTable" width="100%"><tbody><tr><td>First Name<td><td>' +
+    '<table class="table table-striped table-responsive-sm modalShowTable" width="100%"><tbody><tr><td>Patient Name<td><td>' +
       data[1] +
-      "</td></tr><tr><td>Last name<td><td>" +
+      "</td></tr><tr><td>Age<td><td>" +
       data[2] +
-      "</td></tr><tr><td>Email<td><td>" +
-      data[3] +
       "</td></tr><tr><td>Mobile No.<td><td>" +
-      data[4] +
-      "</td></tr><tr><td>Birthday<td><td>" +
-      data[5] +
-      "</td></tr><tr><td>Marital status<td><td>" +
-      data[6] +
+      data[3] +
       "</td></tr><tr><td>Sex<td><td>" +
+      data[4] +
+      "</td></tr><tr><td>profession<td><td>" +
+      data[5] +
+      "</td></tr><tr><td>income<td><td>" +
+      data[6] +
+      "</td></tr><tr><td>CNIC number <td><td>" +
       data[7] +
-      "</td></tr> <tr><td>Blood Group<td><td>" +
+      "</td></tr> <tr><td>Gender<td><td>" +
       data[8] +
-      "</td></tr> <tr><td>Patient Weight<td><td>" +
+      "</td></tr> <tr><td>patient attendant<td><td>" +
       data[9] +
-      "</td></tr> <tr><td>Patient Height<td><td>" +
+      "</td></tr> <tr><td>Attendant relation to patient<td><td>" +
       data[10] +
-      "</td></tr> <tr><td>Address<td><td>" +
+      "</td></tr> <tr><td>Attendant phone number<td><td>" +
       data[11] +
-      "</td></tr> <tr><td>Patient History<td><td>" +
+      "</td></tr> <tr><td>Address<td><td>" +
       data[12] +
       "</td></tr></tbody></table>"
   );

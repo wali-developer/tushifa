@@ -23,7 +23,7 @@
         <nav class="navigation">
           <ul class="list-unstyled main-menu">
             <li class="has-submenu active">
-              <a href="index.html">
+              <a href="dashboard.html">
                 <i class="fas fa-th-large"></i>
                 <span class="nav-label">Dashboard</span>
               </a>
@@ -345,11 +345,11 @@
                             <th></th>
                             <th>Patient Name</th>
                             <th>Age</th>
-                            <th>Email</th>
                             <th>Mobile No.</th>
-                            <th>Birthday</th>
-                            <th>Gender</th>
                             <th>Sex</th>
+                            <th>profession</th>
+                            <th>income</th>
+                            <th>patient attendant</th>
                             <th>Action</th>
                           </tr>
                         </thead>
@@ -365,11 +365,11 @@
                             </td>
                             <td>Airi</td>
                             <td>20</td>
-                            <td>test@gmail.com</td>
                             <td>658543469</td>
-                            <td>2011/04/25</td>
-                            <td>Married</td>
                             <td>Male</td>
+                            <td>profession</td>
+                            <td>income</td>
+                            <td>patient attendant</td>
                             <td>
                               <a class="mr-4 vue">
                                 <span class="fa fa-eye tbl-eye" aria-hidden="true"></span>
@@ -393,11 +393,11 @@
                             </td>
                             <td>Angelica</td>
                             <td>33</td>
-                            <td>test@gmail.com</td>
                             <td>658543469</td>
-                            <td>2011/04/25</td>
-                            <td>Married</td>
                             <td>Male</td>
+                            <td>profession</td>
+                            <td>income</td>
+                            <td>patient attendant</td>
                             <td>
                               <a class="mr-4 vue">
                                 <span class="fa fa-eye tbl-eye" aria-hidden="true"></span>
@@ -421,11 +421,11 @@
                             </td>
                             <td>Ashton</td>
                             <td>44</td>
-                            <td>test@gmail.com</td>
                             <td>658543469</td>
-                            <td>2011/04/25</td>
-                            <td>Married</td>
                             <td>Male</td>
+                            <td>profession</td>
+                            <td>income</td>
+                            <td>patient attendant</td>
                             <td>
                               <a class="mr-4 vue">
                                 <span class="fa fa-eye tbl-eye" aria-hidden="true"></span>
@@ -449,11 +449,11 @@
                             </td>
                             <td>Bradley</td>
                             <td>55</td>
-                            <td>test@gmail.com</td>
                             <td>658543469</td>
-                            <td>2011/04/25</td>
-                            <td>Married</td>
                             <td>Male</td>
+                            <td>profession</td>
+                            <td>income</td>
+                            <td>patient attendant</td>
                             <td>
                               <a class="mr-4 vue">
                                 <span class="fa fa-eye tbl-eye" aria-hidden="true"></span>
@@ -477,11 +477,11 @@
                             </td>
                             <td>Brenden</td>
                             <td>43</td>
-                            <td>test@gmail.com</td>
                             <td>658543469</td>
-                            <td>2011/04/25</td>
-                            <td>Married</td>
                             <td>Male</td>
+                            <td>profession</td>
+                            <td>income</td>
+                            <td>patient attendant</td>
                             <td>
                               <a class="mr-4 vue">
                                 <span class="fa fa-eye tbl-eye" aria-hidden="true"></span>
@@ -505,11 +505,11 @@
                             </td>
                             <td>Brielle</td>
                             <td>25</td>
-                            <td>test@gmail.com</td>
                             <td>658543469</td>
-                            <td>2011/04/25</td>
-                            <td>Married</td>
                             <td>Male</td>
+                            <td>profession</td>
+                            <td>income</td>
+                            <td>patient attendant</td>
                             <td>
                               <a class="mr-4 vue">
                                 <span class="fa fa-eye tbl-eye" aria-hidden="true"></span>
@@ -564,6 +564,223 @@
         </div>
       </div>
       <!-- End section content -->
+
+      <!-- Show data patient -->
+      <div
+        class="modal fade"
+        id="myModal"
+        tabindex="-1"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <!-- <div > -->
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="myModalLabel">
+                <img
+                  class="rounded-circle"
+                  width="35"
+                  src="https://via.placeholder.com/150/f8f8f8/2b2b2b"
+                  alt=""
+                />
+                Tiger Nixon
+              </h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="insertHere"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Show data patient -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="modal-edit"
+        tabindex="-1"
+        aria-labelledby="modal-title-edit-row"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-title-edit-row">Angelica Ramos</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="basic-form">
+                    <form>
+                      <div class="row">
+                        <div class="col-xl-4">
+                          <div class="form-group row widget-3">
+                            <div class="col-lg-12">
+                              <div class="form-input">
+                                <label class="labeltest" for="file-ip-1">
+                                  <span> Drop image here or click to upload. </span>
+                                </label>
+                                <input
+                                  type="file"
+                                  id="file-ip-1"
+                                  accept="image/*"
+                                  onchange="showPreview(event);"
+                                />
+                                <div class="preview">
+                                  <img id="file-ip-1-preview" src="#" alt="img" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4">
+                          <div class="form-group row">
+                            <div class="col-lg-12">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Patient Name"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-lg-12">
+                              <input type="text" class="form-control" placeholder="Mobile No." />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-lg-12">
+                              <input
+                                type="email"
+                                class="form-control"
+                                placeholder="CNIC number"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-lg-12">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Prescription details"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4">
+                          <div class="form-group row">
+                            <div class="col-lg-12">
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Age" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-lg-12">
+                              <select class="form-control form-select">
+                                <option>Marital status</option>
+                                <option>Married</option>
+                                <option>Unmarried</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-lg-12">
+                              <select class="form-control form-select">
+                                <option>Sex</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-lg-12">
+                              <select class="form-control form-select">
+                                <option>Blood Group</option>
+                                <option>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xl-4"></div>
+                        <div class="col-xl-4">
+                          <div class="form-group row">
+                            <div class="col-lg-12">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Attending physician name"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-4">
+                          <div class="form-group row">
+                            <div class="col-lg-12">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Attendant name"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xl-4">
+                          <div class="form-group">
+                            <div class="col-lg-12"></div>
+                            <input
+                              type="number"
+                              min="1"
+                              class="form-control"
+                              placeholder="Attendant phone number"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-xl-8">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Attendant relation to patient "
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Modal -->
 
       <!-- start section footer -->
       <div class="footer">
